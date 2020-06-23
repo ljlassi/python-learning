@@ -13,11 +13,11 @@ class Car:
         evaluate_max_speed = ""
         evaluate_weight = ""
         if self.manufacturer == "Ford":
-            evaluate_manufacturer = "Based on car type - Your car is going to blow up, lol."
+            evaluate_manufacturer = "Based on car manufacturer - Your car is going to blow up, lol."
         elif self.manufacturer == "Volvo":
-            evaluate_manufacturer = "Based on car type - Your car is not going to blow up."
+            evaluate_manufacturer = "Based on car manufacturer - Your car is not going to blow up."
         else:
-            evaluate_manufacturer = "Based on car type - Your car is probably not going to blow up."
+            evaluate_manufacturer = "Based on car manufacturer - Your car is probably not going to blow up."
         if self.type == "pickup":
             evaluate_type = "Pickup - Are you a redneck???!!!"
         else:
@@ -27,7 +27,7 @@ class Car:
         else:
             evaluate_max_speed = "Your car goes fast, and is going kill you :o"
         if self.weight < 1000:
-            evaluate_max_speed = "In a car crash, your car weight means you are more likely to die than the other party"
+            evaluate_weight = "In a car crash, your car weight means you are more likely to die than the other party"
         else:
             evaluate_weight = "Don't kill anyone with your carrr!!!!!!"
         return [evaluate_manufacturer, evaluate_type, evaluate_max_speed, evaluate_weight]
