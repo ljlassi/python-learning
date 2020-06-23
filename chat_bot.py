@@ -12,7 +12,7 @@ class ChatBot:
 
     def greetChatter(self):
         if self.annoyance_level >= 75:
-            i = random.randrange(0, len(self.timefactored_greetings), 1)
+            i = random.randrange(0, len(self.annoying_greeting), 1)
             print(self.annoying_greeting[i])
         else:
             i = random.randrange(0, len(self.base_greetings), 1)
